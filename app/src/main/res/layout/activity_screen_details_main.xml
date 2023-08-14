@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="22dp"
+    android:paddingRight="22dp"
+    android:paddingLeft="22dp"
+    tools:context=".ScreenDetailsMainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notif">
+
+                    <ImageView
+                        android:layout_width="312dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/smart_koperasi"/>
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="end|center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/notifikasi" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/input_shape"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@android:color/transparent"
+                        android:textSize="13dp"
+                        android:hint="Search"
+                        android:layout_marginLeft="30dp"
+                       />
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/search"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="2dp"/>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih kategori"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/consolas"
+                    android:textColor="@color/black"
+                    android:alpha="0.8"
+                    android:layout_marginLeft="8dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat semua"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/consolas"
+                    android:textColor="@color/black"
+                    android:alpha="0.7"
+                    android:layout_gravity="end"/>
+                </FrameLayout>
+              <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:layout_marginTop="15dp">
+
+                  <FrameLayout
+                      android:layout_width="85dp"
+                      android:layout_height="95dp"
+                      android:layout_marginRight="8dp"
+                      android:background="@drawable/input_shape">
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/sayur4"
+                         />
+
+                  </FrameLayout>
+                  <FrameLayout
+                      android:layout_width="85dp"
+                      android:layout_height="95dp"
+                      android:layout_marginRight="8dp"
+                      android:background="@drawable/input_shape">
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/makanan2"/>
+
+
+                  </FrameLayout>
+                  <FrameLayout
+                      android:layout_width="85dp"
+                      android:layout_height="95dp"
+                      android:layout_marginRight="8dp"
+                      android:background="@drawable/input_shape">
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/minuman2"
+                          />
+
+
+                  </FrameLayout>
+                  <FrameLayout
+                      android:layout_width="85dp"
+                      android:layout_height="95dp"
+                      android:layout_marginRight="8dp"
+                      android:background="@drawable/input_shape">
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:src="@drawable/pakaian1"
+                          />
+
+
+                  </FrameLayout>
+
+
+              </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beranda"
+                            android:fontFamily="@font/consolas_bold"
+                            android:alpha="0.8"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Promo"
+                            android:fontFamily="@font/consolas_bold"
+                            android:alpha="0.8"
+                            android:layout_marginLeft="60dp"
+                            android:textColor="@color/black"/>
+
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="227dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/input_shape">
+                            <!-- Isi konten FrameLayout pertama -->
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="227dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="4dp"
+                            android:background="@drawable/input_shape">
+                            <!-- Isi konten FrameLayout kedua -->
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="227dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/input_shape">
+                            <!-- Isi konten FrameLayout pertama -->
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="227dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="4dp"
+                            android:background="@drawable/input_shape">
+                            <!-- Isi konten FrameLayout kedua -->
+                        </FrameLayout>
+
+
+
+                        <!-- Tambahkan FrameLayout keempat di sini -->
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

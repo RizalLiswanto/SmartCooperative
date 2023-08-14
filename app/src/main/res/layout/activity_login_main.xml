@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginMainActivity">
+
+    <ImageView
+        android:layout_width="349dp"
+        android:layout_height="165dp"
+        android:src="@drawable/logo"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/logo2"
+        android:animation="@anim/anim_bawah"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/logo2"
+        android:padding="20dp"
+        android:id="@+id/linear">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/input_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@android:color/transparent"
+                android:textSize="13dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="8dp"
+                android:id="@+id/userInput"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="4dp"
+                android:alpha="0.5"
+                android:labelFor="@id/userInput"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_akun24"
+                android:layout_gravity="start|center_vertical"
+              android:layout_marginLeft="10dp"
+            android:layout_marginStart="2dp"/>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/input_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:paddingRight="4dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@android:color/transparent"
+                android:textSize="13dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="8dp"
+                android:id="@+id/pwInput"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="4dp"
+                android:alpha="0.5"
+                android:labelFor="@id/pwInput"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/image_view"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="2dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_eye"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="2dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="295dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/linear"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_shape"
+        android:text="Login"
+        android:textColor="@color/white"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonreset"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_below="@id/button_1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:text="Reset Password"
+        android:textAllCaps="false"
+        android:textColor="#498FF8"
+        android:textSize="11dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <FrameLayout
+        android:layout_width="154dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/buttonreset"
+        android:id="@+id/buttonAkun"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:text="Belum punya akun?"
+            android:textAllCaps="false"
+            android:textColor="#498FF8"
+            android:textSize="11dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@id/buttonreset"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:text="Buat akun"
+            android:textAllCaps="false"
+            android:textColor="#FF4236"
+            android:textSize="11dp"
+            tools:ignore="TouchTargetSizeCheck"
+            android:id="@+id/btnregister"/>
+
+    </FrameLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".RegisterMainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:paddingTop="16dp"
+            android:paddingRight="22dp"
+            android:paddingLeft="22dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/linear1">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gmbr1"
+        android:id="@+id/gmb1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Identitas Anda"
+        android:textSize="20dp"
+        android:fontFamily="@font/segoeui_semibold"
+        android:alpha="0.65"
+        android:textColor="@color/black"
+        android:layout_below="@id/gmb1"
+        android:id="@+id/teks1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="kami membutuhkan verifikasi anda.Kami akan mengirimkan Kode verifikasi satu kali kepada anda."
+        android:fontFamily="@font/segoeui_semibold"
+        android:alpha="0.6"
+        android:textSize="16dp"
+        android:layout_marginTop="8dp"
+        android:padding="2dp"
+        android:layout_below="@id/teks1"
+        android:id="@+id/teks2"
+       />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/linear1"
+        android:id="@+id/linear">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/input_shape"
+           android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@android:color/transparent"
+                android:textSize="13dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="8dp"
+                android:id="@+id/userInput"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:fontFamily="@font/segoeui_1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="4dp"
+                android:alpha="0.5"
+                android:labelFor="@id/userInput"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_akun24"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="6dp"/>
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/input_shape"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Masukkan Nomor Telp "
+                android:background="@android:color/transparent"
+                android:textSize="13dp"
+                android:paddingLeft="68dp"
+                android:id="@+id/noInput"/>
+
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="35dp"
+                android:layout_gravity="start|center_vertical"
+                android:src="@drawable/bendera"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/logohp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="2dp"/>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/input_shape"
+            android:layout_marginTop="20dp"
+            android:paddingRight="4dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@android:color/transparent"
+                android:textSize="13dp"
+                android:paddingLeft="40dp"
+                android:paddingTop="8dp"
+                android:id="@+id/pwInput"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:fontFamily="@font/segoeui_1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="4dp"
+                android:alpha="0.5"
+                android:labelFor="@id/pwInput"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/image_view"
+                android:src="@drawable/ic_baseline_lock_24"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="6dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_eye"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="6dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+            <Button
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="56dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button_shape"
+                android:drawableEnd="@drawable/back"
+                android:fontFamily="@font/segoeui_1"
+                android:text="Submit"
+                android:textColor="@color/white" />
+
+       </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
