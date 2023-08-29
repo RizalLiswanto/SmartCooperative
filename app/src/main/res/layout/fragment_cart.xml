@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:paddingLeft="22dp"
+        android:paddingTop="22dp"
+        android:orientation="vertical"
+        android:id="@+id/pertama">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:fontFamily="@font/consolas"
+                android:textSize="33dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/notifikasi" />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/profil" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="26dp"
+                android:layout_height="24dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Pilih Semua"
+                android:fontFamily="@font/consolas"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pertama"
+        android:background="@color/backgroundAbu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/shape_putih"
+                android:id="@+id/kedua">
+
+                
+                <ImageView
+                    android:layout_width="141dp"
+                    android:layout_height="98dp"
+                    android:layout_gravity="start|center"
+                    android:background="@drawable/input_shape"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="start|center"
+                    android:text="Foto Produk"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Produk"
+                        android:fontFamily="@font/consolas"
+                        android:textSize="13dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harga Produk"
+                        android:fontFamily="@font/consolas"
+                        android:textSize="13dp"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+                    <CheckBox
+                        android:layout_width="26dp"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="26dp"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Toko"
+                    android:fontFamily="@font/consolas"
+                    android:textSize="13dp"
+                    android:textColor="@color/black" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="24dp"
+                    android:text="Kota Toko"
+                    android:fontFamily="@font/consolas"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"/>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/shape_putih"
+                android:layout_below="@id/kedua">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="121dp">
+
+                <ImageView
+                    android:layout_width="141dp"
+                    android:layout_height="98dp"
+                    android:layout_gravity="start|center"
+                    android:background="@drawable/input_shape"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="start|center"
+                    android:text="Foto Produk"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Produk"
+                            android:fontFamily="@font/consolas"
+                            android:textSize="13dp"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harga Produk"
+                            android:fontFamily="@font/consolas"
+                            android:textSize="13dp"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+                    <CheckBox
+                        android:layout_width="26dp"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="26dp"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Toko"
+                        android:fontFamily="@font/consolas"
+                        android:textSize="13dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="24dp"
+                    android:text="Kota Toko"
+                    android:fontFamily="@font/consolas"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"/>
+            </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="121dp">
+
+                    <ImageView
+                        android:layout_width="141dp"
+                        android:layout_height="98dp"
+                        android:layout_gravity="start|center"
+                        android:background="@drawable/input_shape"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_gravity="start|center"
+                        android:text="Foto Produk"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nama Produk"
+                                android:fontFamily="@font/consolas"
+                                android:textSize="13dp"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Harga Produk"
+                                android:fontFamily="@font/consolas"
+                                android:textSize="13dp"
+                                android:textColor="@color/black" />
+
+
+                        </LinearLayout>
+                        <CheckBox
+                            android:layout_width="26dp"
+                            android:layout_height="24dp"
+                            android:gravity="center"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

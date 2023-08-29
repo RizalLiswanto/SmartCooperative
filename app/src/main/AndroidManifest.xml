@@ -13,6 +13,18 @@
         android:theme="@style/Theme.SmartCooperative"
         tools:targetApi="31">
         <activity
+            android:name=".PenganturanProfilMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotifikasiMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeMainActivity"
             android:exported="false">
             <meta-data
@@ -41,7 +53,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ProdukMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="Primarycolor">#FF4236</color>
+    <color name="backgroundAbu">#EBE7E7</color>
+    <color name="garis">#8C8C8C</color>
+    <color name="abubackground">#EBE7E7</color>
 </resources>

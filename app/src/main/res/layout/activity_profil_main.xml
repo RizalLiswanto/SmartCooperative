@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:background="@color/backgroundAbu"
+    tools:context=".ProfilMainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/menuUtama">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/black_buttonback" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="Menu Utama"
+          android:textSize="32dp"
+          android:textColor="@color/black"
+          android:fontFamily="@font/consolas"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuUtama"
+        android:id="@+id/pengaturan">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/oval_shape">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profil"/>
+        </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="35dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pengguna"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/consolas"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08xxxxxxxxxx"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/consolas"
+                    />
+
+            </LinearLayout>
+            
+
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/setting"
+            android:layout_gravity="end|center"/>
+
+    </FrameLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Total saldo"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/consolas"
+            android:layout_below="@id/pengaturan"
+            android:id="@+id/saldo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/saldo"
+        android:id="@+id/isisaldo">
+        
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_putih">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="14dp"
+                android:layout_gravity="start|center"
+                android:src="@drawable/dompet"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:text="Rp. 23.000"
+                android:textSize="16dp"
+                android:fontFamily="@font/consolas"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="170dp"
+                android:layout_gravity="end|center"
+                android:src="@drawable/dompet"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="78dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_add_24"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_marginLeft="8dp"
+                    android:text="isi saldo"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/consolas"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        
+
+
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+       android:src="@drawable/garis"
+        android:layout_below="@id/isisaldo"
+        android:id="@+id/garis"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/garis"
+        android:id="@+id/linear1">
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_putih">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Pesanan"
+                android:textSize="16dp"
+                android:fontFamily="@font/consolas"
+                android:textColor="@color/black"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end|center"
+                    android:src="@drawable/black_buttonbackkanan"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/linear1"
+        android:id="@+id/linear2">
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_putih">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Daftar Alamat"
+                android:textSize="16dp"
+                android:fontFamily="@font/consolas"
+                android:textColor="@color/black"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="end|center"
+                android:src="@drawable/black_buttonbackkanan"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/linear2"
+        android:id="@+id/linear3">
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="74dp"
+            android:background="@drawable/shape_putih">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Ulasan"
+                android:textSize="16dp"
+                android:fontFamily="@font/consolas"
+                android:textColor="@color/black"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end|center"
+                    android:src="@drawable/black_buttonbackkanan"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/linear3"
+        android:id="@+id/linear4">
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="74dp"
+            android:background="@drawable/shape_putih">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text=" Metode Pembayaran"
+                android:textSize="16dp"
+                android:fontFamily="@font/consolas"
+                android:textColor="@color/black"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="end|center"
+                    android:src="@drawable/black_buttonbackkanan"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="388dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Logout"
+        android:textSize="20dp"
+        android:fontFamily="@font/segouui"
+        android:background="@drawable/button_shape"
+        android:layout_below="@id/linear4"/>
+
+
+
+
+
+
+</RelativeLayout>

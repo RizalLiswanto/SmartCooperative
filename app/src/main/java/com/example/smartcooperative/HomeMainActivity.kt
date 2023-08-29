@@ -19,6 +19,14 @@ class HomeMainActivity : AppCompatActivity() {
             when (it.itemId) {
                 R.id.home -> replaceFragment(HomeFragment())
 
+                R.id.notifikasibtn -> {
+                    val fragmentTransaction = supportFragmentManager.beginTransaction()
+                    fragmentTransaction.replace(R.id.frame, NotifikasiFragment())
+                    fragmentTransaction.addToBackStack(null)
+                    fragmentTransaction.commit()
+                    binding.bottomNavigationView.menu.findItem(R.id.notifikasibtn).isEnabled = false
+                }
+
 
                 else -> {
 

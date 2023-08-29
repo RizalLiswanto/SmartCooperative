@@ -112,7 +112,8 @@
                 android:background="@android:color/transparent"
                 android:textSize="13dp"
                 android:paddingLeft="68dp"
-                android:id="@+id/noInput"/>
+                android:id="@+id/noInput"
+                tools:ignore="TextSizeCheck"/>
 
 
             <ImageView
