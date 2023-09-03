@@ -1,9 +1,11 @@
 package com.example.smartcooperative
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.FrameLayout
+import android.widget.ImageView
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 class ProdukMainActivity : AppCompatActivity() {
@@ -27,7 +29,36 @@ class ProdukMainActivity : AppCompatActivity() {
             override fun onSlide(bottomSheet: View, slideOffset: Float) {
                 // Kode yang akan dieksekusi ketika _Bottom Sheet_ digeser (slide)
             }
+
+
         })
+
+//        val toCart = findViewById<ImageView>(R.id.btnCart)
+//
+//
+//        val fragment = CartFragment()
+//        toCart.setOnClickListener{
+//
+//            val transaction = supportFragmentManager.beginTransaction()
+//            transaction.replace(R.id.Cart,fragment)
+//            transaction.commit()
+//
+//
+//        }
+        val toCart = findViewById<ImageView>(R.id.btnCart)
+//
+        toCart.setOnClickListener{
+//            val fragment = CartFragment()
+//            val transaction = supportFragmentManager.beginTransaction()
+//            transaction.replace(R.id.fragment_container, fragment)
+//            transaction.addToBackStack(null)
+//            transaction.commit()
+            val intent = Intent(this, HomeMainActivity::class.java)
+            intent.putExtra("selectedFragment","cart")
+            startActivity(intent)
+        }
+
+
     }
 
 

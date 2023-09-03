@@ -201,7 +201,8 @@
                             android:layout_height="227dp"
                             android:layout_weight="1"
                             android:layout_marginStart="4dp"
-                            android:background="@drawable/input_shape">
+                            android:background="@drawable/input_shape"
+                            android:id="@+id/btndetail">
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">

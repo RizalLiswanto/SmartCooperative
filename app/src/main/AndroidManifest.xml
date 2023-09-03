@@ -19,7 +19,7 @@
             android:name=".ProfilMainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ProdukMainActivity"
             android:exported="false" />
         <activity
             android:name=".NotifikasiMainActivity"
@@ -53,7 +53,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ProdukMainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.FrameLayout
 import android.widget.ImageView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -34,6 +35,8 @@ class  HomeFragment : Fragment() {
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
             super.onViewCreated(view, savedInstanceState)
 
+            val produkDetail =view.findViewById<FrameLayout>(R.id.btndetail)
+
             val notifikasiImageView = view.findViewById<ImageView>(R.id.notifikasibtn)
             notifikasiImageView.setOnClickListener {
                 // Pindah ke NotifikasiFragment di sini
@@ -41,26 +44,36 @@ class  HomeFragment : Fragment() {
                 fragmentTransaction.replace(R.id.frame, NotifikasiFragment())
                 fragmentTransaction.addToBackStack(null)
                 fragmentTransaction.commit()
+
+
             }
+
+            produkDetail.setOnClickListener{
+                val i= Intent(activity,ProdukMainActivity::class.java)
+                startActivity(i)
+
+            }
+
 
 
    
 
 
     }
-    fun disableSelectedItem() {
-        val bottomNavView = activity?.findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        val menu = bottomNavView?.menu
-        val selectedItem = menu?.findItem(bottomNavView.selectedItemId)
-        selectedItem?.isEnabled = false
-    }
-    override fun onResume() {
-        super.onResume()
-        val bottomNavView = activity?.findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        val menu = bottomNavView?.menu
-        val selectedItem = menu?.findItem(bottomNavView.selectedItemId)
-        selectedItem?.isEnabled = true
-    }
+
+//    fun disableSelectedItem() {
+//        val bottomNavView = activity?.findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+//        val menu = bottomNavView?.menu
+//        val selectedItem = menu?.findItem(bottomNavView.selectedItemId)
+//        selectedItem?.isEnabled = false
+//    }
+//    override fun onResume() {
+//        super.onResume()
+//        val bottomNavView = activity?.findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+//        val menu = bottomNavView?.menu
+//        val selectedItem = menu?.findItem(bottomNavView.selectedItemId)
+//        selectedItem?.isEnabled = true
+//    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

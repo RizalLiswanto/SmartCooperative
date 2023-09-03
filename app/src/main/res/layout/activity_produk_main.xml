@@ -11,7 +11,8 @@
         android:layout_height="410dp"
         android:paddingLeft="10dp"
         android:paddingTop="7dp"
-        android:background="#EBE7E7">
+        android:background="#EBE7E7"
+        android:id="@+id/fragment_container">
 
         <ImageView
             android:layout_width="40dp"
@@ -173,7 +174,7 @@
                 >
 
                 <Button
-                    android:layout_width="290dp"
+                    android:layout_width="250dp"
                     android:layout_height="38dp"
                     android:layout_marginLeft="5dp"
                     android:text="Add To cart"
@@ -185,7 +186,8 @@
                     android:layout_height="35dp"
                     android:layout_marginRight="50dp"
                     android:layout_gravity="end"
-                    android:src="@drawable/card"/>
+                    android:src="@drawable/card"
+                    android:id="@+id/btnCart"/>
 
             </FrameLayout>
 

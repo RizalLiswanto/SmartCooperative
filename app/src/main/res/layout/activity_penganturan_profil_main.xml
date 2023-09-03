@@ -1,9 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:background="@color/backgroundAbu"
     tools:context=".PenganturanProfilMainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/frameProfil">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/black_buttonback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Profile"
+            android:textSize="32dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/consolas"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@id/frameProfil"
+        android:id="@+id/fotoProfil">
+
+        <FrameLayout
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_gravity="center"
+            android:background="@drawable/oval_shape">
+
+            <ImageView
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profil"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/fotoProfil"
+        android:id="@+id/linear1">
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="74dp"
+            android:padding="25dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_putih">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Nama Pengguna"
+                android:textSize="16dp"
+                android:fontFamily="@font/consolas"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/linear1"
+        android:id="@+id/linear2">
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="74dp"
+            android:padding="25dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_putih">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text="08xxxxxxxxxx"
+                android:textSize="16dp"
+                android:fontFamily="@font/consolas"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/linear2"
+        android:id="@+id/linear3">
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="74dp"
+            android:padding="25dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_putih">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Alamat"
+                android:textSize="16dp"
+                android:fontFamily="@font/consolas"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/linear3"
+        android:id="@+id/linear4">
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="74dp"
+            android:padding="25dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_putih">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Tanggal Lahir"
+                android:textSize="16dp"
+                android:fontFamily="@font/consolas"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/linear4"
+        android:id="@+id/linear5">
+
+        <LinearLayout
+            android:layout_width="384dp"
+            android:layout_height="74dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_putih">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center"
+                android:text="Password"
+                android:textSize="16dp"
+                android:fontFamily="@font/consolas"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="ubah"
+                android:textSize="16dp"
+                android:layout_gravity="end|bottom"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="190dp"
+        android:layout_below="@id/linear5">
+
+    <ImageView
+        android:layout_width="197dp"
+        android:layout_height="55dp"
+        android:src="@drawable/smart_koperasi"
+        android:layout_gravity="end"
+        />
+    </FrameLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
